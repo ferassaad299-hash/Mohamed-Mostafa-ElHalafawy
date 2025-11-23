@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="gold-dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Mohamed Mostafa ElHalafawy - Luxury Real Estate Portfolio</title>
+  <style>
+    /* Luxury Gold & Black Theme */
+    html[data-theme="gold-dark"] {
+      --bg: #000000;
+      --bg-2: #1a1a1a;
+      --card: #0f0f0f;
+      --text: #f5f5f5;
+      --muted: #c7c7c7;
+      --border: #333333;
+      --accent: #d3ae4a;
+      --accent-light: #f2d17d;
+      --link: #d3ae4a;
+      --link-hover: #f2d17d;
+      --btn-text-on-accent: #0a0a0a;
+      --shadow: rgba(211, 174, 74, 0.7);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-family: 'Helvetica Neue', Arial, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); display: flex; flex-direction: column; min-height: 100vh; }
+    a { color: var(--link); text-decoration: none; transition: 0.3s; }
+    a:hover { color: var(--link-hover); }
+
+    .container { max-width: 900px; margin: 2rem auto 4rem; padding: 2rem; background: var(--card); border-radius: 20px; box-shadow: 0 10px 40px var(--shadow); }
+
+    header { background: var(--bg-2); padding: 4rem 2rem 3.5rem; text-align: center; border-radius: 20px; box-shadow: 0 10px 30px var(--shadow); }
+    header h1 { font-size: 3.2rem; font-weight: 900; color: var(--accent); margin-bottom: 0.5rem; letter-spacing: 1px; text-shadow: 0 0 15px var(--accent-light); }
+    header p.subtitle { color: var(--muted); font-size: 1.4rem; margin-bottom: 1rem; font-style: italic; }
+    header p.link a { background: var(--accent); padding: 0.6rem 1.5rem; border-radius: 25px; color: var(--btn-text-on-accent); font-weight: 700; font-size: 1.1rem; box-shadow: 0 0 20px var(--shadow); }
+    header p.link a:hover { background: var(--accent-light); box-shadow: 0 0 25px var(--accent-light); }
+
+    section { padding: 2rem 1.5rem; border-bottom: 1px solid var(--border); }
+    h2 { font-size: 2.2rem; color: var(--accent); border-bottom: 3px solid var(--accent-light); padding-bottom: 6px; display: inline-block; margin-bottom: 1rem; text-shadow: 0 0 12px var(--accent-light); }
+    p, li { font-size: 1.15rem; color: var(--text); margin-bottom: 0.6rem; line-height: 1.7; }
+
+    /* Skills */
+    .skill { margin: 1.2rem 0; }
+    .skill span { font-weight: 700; color: var(--accent); text-shadow: 0 0 8px var(--accent-light); }
+    .bar { width: 100%; height: 20px; background: #1a1a1a; border-radius: 14px; overflow: hidden; box-shadow: inset 0 2px 6px rgba(0,0,0,0.5); }
+    .fill { height: 100%; background: linear-gradient(90deg, var(--accent-light), var(--accent)); box-shadow: 0 0 15px var(--accent-light); transition: width 1.5s ease-in-out; }
+
+    /* Timeline */
+    .timeline { border-left: 4px solid var(--accent); padding-left: 25px; position: relative; }
+    .timeline-item { margin-bottom: 2rem; position: relative; padding-left: 1rem; }
+    .timeline-item::before { content: ''; position: absolute; left: -16px; top: 6px; width: 24px; height: 24px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 15px var(--accent-light); }
+    .timeline-item h3 { color: var(--accent); font-size: 1.3rem; margin-bottom: 0.3rem; text-shadow: 0 0 10px var(--accent-light); }
+    .timeline-item time { font-size: 0.95rem; color: var(--muted); font-style: italic; display: block; margin-bottom: 0.5rem; }
+
+    footer { text-align: center; padding: 2rem 0; background: var(--card); color: var(--muted); box-shadow: 0 -3px 15px var(--shadow); font-size: 0.95rem; border-radius: 0 0 20px 20px; }
+
+    @media (max-width: 768px) {
+      .container { padding: 1.5rem; margin: 1.5rem 1rem 3rem; }
+      h2 { font-size: 1.8rem; }
+    }
+
+    @media (max-width: 480px) {
+      h2 { font-size: 1.5rem; }
+      p, li { font-size: 1rem; }
+      .timeline-item h3 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mohamed Mostafa ElHalafawy</h1>
+  <p class="subtitle">Business Development & Luxury Real Estate Professional</p>
+  <p class="link"><a href="mailto:mohamedelhalfawy.me@gmail.com">Email Me</a></p>
+</header>
+
+<main class="container">
+<section id="summary">
+  <h2>Summary</h2>
+  <p>Highly motivated individual with experience in business development and luxury real estate. Focused on driving revenue, building relationships, and providing clients with premium property experiences.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill"><span>Customer Assistance</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+  <div class="skill"><span>Negotiation</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+  <div class="skill"><span>Sales</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+  <div class="skill"><span>Salesforce</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+  <div class="skill"><span>Teamwork</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+  <div class="skill"><span>Adaptability</span><div class="bar"><div class="fill" style="width:95%"></div></div></div>
+  <div class="skill"><span>Strategic Thinking</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+  <div class="skill"><span>Product Knowledge</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+  <div class="skill"><span>Creative Thinking</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Real Estate Agent – Online Homes, Alexandria</h3>
+      <time>Sep 2024 – Present</time>
+      <p>Assist clients in finding ideal luxury properties, providing personalized support and expert negotiation to deliver high-end experiences.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Sales & Customer Support – AT&T (Sutherland), Alexandria</h3>
+      <time>Aug 2023 – Aug 2024</time>
+      <p>Handled client inquiries and enhanced customer satisfaction, contributing to increased sales and repeat business.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li>Faculty of Business – Alexandria University (2022 – Present)</li>
+    <li>High School Diploma – Modern American School (2014 – 2022)</li>
+  </ul>
+</section>
+
+<section id="languages">
+  <h2>Languages</h2>
+  <ul>
+    <li>Arabic – Native</li>
+    <li>English – Advanced</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Alexandria, Egypt</p>
+  <p>Email: <a href="mailto:mohamedelhalfawy.me@gmail.com">mohamedelhalfawy.me@gmail.com</a></p>
+  <p>Phone: 01226126058</p>
+</section>
+</main>
+
+<footer>
+  © 2025 Mohamed Mostafa ElHalafawy
+</footer>
+
+</body>
+</html>
